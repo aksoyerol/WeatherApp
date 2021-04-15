@@ -1,6 +1,3 @@
-import { JsonAlias, JsonProperty } from "jackson-js"
-
-
 export interface Airquality{
 
     co:number
@@ -9,6 +6,10 @@ export interface Airquality{
     so2:number
     pm2_5:number
     pm10:number
+    //@JsonProperty<string>('us-epa-index')
+    
     us_epa_index:number
+    //@JsonProperty<string>('gb-defra-index')
     gb_defra_index:number
+    
 }
